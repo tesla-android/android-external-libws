@@ -1,0 +1,12 @@
+cc_library_shared {
+    name: "libws",
+    local_include_dirs: ["."],
+    cflags: [
+        "-Wall", 
+        "-Wextra",
+        "-std=c99",
+        "-O2",
+    	"-pedantic",
+    ],
+    srcs: ["*.c"],
+}
