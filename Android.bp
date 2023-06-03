@@ -1,12 +1,15 @@
 cc_library_shared {
     name: "libws",
+    vndk: {
+        enabled: true,
+    },
     local_include_dirs: ["."],
     cflags: [
-        "-Wall", 
+        "-Wall",
         "-Wextra",
         "-std=c99",
         "-O2",
-    	"-pedantic",
+        "-pedantic",
     ],
     srcs: ["*.c"],
 }
