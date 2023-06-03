@@ -3,6 +3,7 @@ cc_library_shared {
     vndk: {
         enabled: true,
     },
+    vendor_available: true,
     local_include_dirs: ["."],
     cflags: [
         "-Wall",
